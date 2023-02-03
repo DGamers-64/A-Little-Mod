@@ -1,0 +1,3 @@
+- eventos para hacer monarquias en latam
+- conf argentina
+- flavor argentina general

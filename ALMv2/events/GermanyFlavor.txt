@@ -1,0 +1,683 @@
+#   GERMANY FLAVOR EVENTS
+
+# Puppet new!
+
+country_event = {
+	id = 50001
+	title = "EVTNAME50001"
+	desc = "EVTDESC50001"
+	picture = "Demonstration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA50001"
+		prestige = 3
+	}
+}
+
+# Get them Annexed
+country_event = {
+	id = 60130
+	title = "EVTNAME60130"
+	desc = "EVTDESC60130"
+	picture = "greatpowers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA60130"
+		prestige = 5
+		inherit = FROM
+	}
+	
+	option = {
+		name = "EVTOPTB60130"
+		any_pop = {
+			militancy = 0.1
+		}
+	}
+}
+
+# Annex SoIs
+country_event = {
+	id = 60120
+	title = "EVTNAME60120"
+	desc = "EVTDESC60120"
+	picture = "greatpowers"
+	
+	trigger = {
+		ai = yes
+		war = no
+		overlord = {
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+			}
+		}
+		part_of_sphere = yes
+		sphere_owner = {
+			war = no
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					tag = AUS
+					tag = KUK
+				}
+				sphere_owner = {
+					tag = GER
+				}
+				NOT = {
+					exists = HUN
+				}
+			}
+		}
+		NOT = {	
+			tag = ISR 
+			}
+	}
+	
+	mean_time_to_happen = {
+		months = 8
+		
+	}
+	
+	option = {
+		name = "EVTOPTA60120"
+		sphere_owner = {
+			country_event = { id=60130 days=0 }
+		}
+	}
+}
+
+# NGF
+
+country_event = {
+	id = 50002
+	title = "EVTNAME50002"
+	desc = "EVTDESC50002"
+	picture = "Demonstration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA50002"
+		prestige = 3
+		NGF = {
+			create_vassal = THIS
+		}
+	}
+
+	option = {
+		name = "EVTOPTB50002"
+		prestige = -10
+		relation = {
+			who = NGF
+			value = -200
+		}
+		war = {
+			target = NGF
+			attacker_goal = { casus_belli = become_independent }
+			defender_goal = { casus_belli = conquest }
+			call_ally = no
+		}
+	}
+}
+
+#  Puppets
+
+country_event = {
+	id = 50000
+	title = "EVTNAME50000"
+	desc = "EVTDESC50000"
+	picture = "Demonstration"
+
+	trigger = {
+
+		year = 1837
+		
+		NOT = {
+			has_country_flag = GermanyPuppet
+		}
+
+		NOT = {
+			overlord = {
+				OR = {
+					tag = PRU
+					tag = NGF
+					tag = GER
+				}
+			}
+		}
+
+		NOT = {
+			tag = DEN
+			tag = FRA
+		}
+	
+		part_of_sphere = yes
+
+		sphere_owner = {
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+			}
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTA50000"
+		sphere_owner = {
+			create_vassal = THIS
+		}
+		prestige = 10
+		sphere_owner = {
+			country_event = 50001
+		}
+
+		set_country_flag = GermanyPuppet
+	}
+
+	option = {
+		name = "EVTOPTB50000"
+			relation = {
+				who = sphere_owner
+				value = -200
+			}
+
+			treasury = -10000
+
+			sphere_owner = {
+				diplomatic_influence = {
+					who = THIS
+					value = -50
+				}
+			}
+		
+		set_country_flag = GermanyPuppet
+	}
+}
+
+#	Austria Disolution
+
+country_event = {
+	id = 50003
+	title = "EVTNAME50003"
+	desc = "EVTDESC50003"
+	picture = "greatpowers"
+
+	trigger = {
+		
+		626 = {
+			owned_by = GER
+		}
+			
+		627 = {
+			owned_by = GER
+		}
+			
+		628 = {
+			owned_by = GER
+		}
+			
+		629 = {
+			owned_by = GER
+		}
+			
+		630 = {
+			owned_by = GER
+		}
+			
+		619 = {
+			owned_by = GER
+		}
+			
+		620 = {
+			owned_by = GER
+		}
+			
+		621 = {
+			owned_by = GER
+		}
+			
+		622 = {
+			owned_by = GER
+		}
+			
+		624 = {
+			owned_by = GER
+		}
+			
+		616 = {
+			owned_by = GER
+		}
+			
+		617 = {
+			owned_by = GER
+		}
+		
+		618 = {
+			owned_by = GER
+		}
+			
+		613 = {
+			owned_by = GER
+		}
+			
+		614 = {
+			owned_by = GER
+		}
+			
+		615 = {
+			owned_by = GER
+		}
+			
+		612 = {
+			owned_by = GER
+		}
+			
+		767 = {
+			owned_by = GER
+		}
+			
+		768 = {
+			owned_by = GER
+		}
+			
+		735 = {
+			owned_by = GER
+		}
+			
+		734 = {
+			owned_by = GER
+		}
+			
+		769 = {
+			owned_by = GER
+		}
+		
+		778 = {
+			owned_by = GER
+		}
+		
+		770 = {
+			owned_by = GER
+		}
+			
+		736 = {
+			owned_by = GER
+		}
+			
+		737 = {
+			owned_by = GER
+		}
+		
+		625 = {
+			owned_by = GER
+		}
+		
+		631 = {
+			owned_by = GER
+		}
+
+		632 = {
+			owned_by = GER
+		}
+
+		688 = {
+			owned_by = GER
+		}
+
+		689 = {
+			owned_by = GER
+		}
+
+		exists = AUS
+
+		tag = GER
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA50003"
+
+			AUS = {
+				release = HUN
+			}
+			
+			AUS = {
+				release = VEN
+			}
+
+			AUS = {
+				release = GLM
+			}
+
+			AUS = {
+				release = MOL
+			}
+
+			country_event = 50004
+	}
+
+	option = {
+		name = "EVTOPTB50003"
+
+		AUS = {
+			release = HUN
+		}
+		
+		AUS = {
+			release = VEN
+		}
+
+		AUS = {
+			release = GLM
+		}
+
+		AUS = {
+			release = MOL
+		}
+
+		create_vassal = HUN
+		create_vassal = VEN
+		create_vassal = GLM
+
+		badboy = 10
+		
+		country_event = 50005
+	}
+
+	option = {
+		name = "EVTOPTC50003"
+		inherit = AUS
+
+		badboy = 20
+
+		any_greater_power = {
+			relation = {
+				who = GER
+				value = -200
+			}
+		}
+	}
+}
+
+#	A
+
+country_event = {
+	id = 50004
+	title = "EVTNAME50004"
+	desc = "EVTDESC50004"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA50004"
+
+			VEN = {
+				inherit = AUS
+			}			
+
+			relation = {
+				who = VEN
+				value = 200
+			}
+
+			diplomatic_influence = {
+				who = VEN
+				value = 200
+			}
+
+			country_event = 50006
+	}
+
+	option = {
+		name = "EVTOPTB50004"
+
+			prestige = 5
+
+			AUS = {
+				release = LOM
+			}
+
+			AUS = {
+				release = CRO
+			}
+			
+			country_event = 50007
+	}
+}
+
+#	B
+
+country_event = {
+	id = 50005
+	title = "EVTNAME50004"
+	desc = "EVTDESC50004"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA50004"
+
+			VEN = {
+				inherit = AUS
+			}			
+
+			relation = {
+				who = VEN
+				value = 200
+			}
+
+			diplomatic_influence = {
+				who = VEN
+				value = 200
+			}
+
+			country_event = 50008
+	}
+
+	option = {
+		name = "EVTOPTB50004"
+
+			prestige = 10
+
+			AUS = {
+				release = LOM
+			}
+
+			AUS = {
+				release = CRO
+			}
+
+			create_vassal = LOM
+			create_vassal = CRO
+
+			country_event = 50009
+
+	}
+}
+
+#	A-1
+
+country_event = {
+	id = 50006
+	title = "EVTNAME50006"
+	desc = "EVTDESC50006"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA50006"
+
+		relation = {
+			who = HUN
+			value = 200
+		}
+
+		diplomatic_influence = {
+			who = HUN
+			value = 200
+		}
+	}
+
+	option = {
+		name = "EVTOPTB50006"
+
+		prestige = 5
+
+		HUN = {
+			release = TRE
+		}
+
+		HUN = {
+			release = SLV
+		}
+
+	}
+}
+
+#	B-1
+
+country_event = {
+	id = 50008
+	title = "EVTNAME50006"
+	desc = "EVTDESC50006"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA50006"
+
+		relation = {
+			who = HUN
+			value = 200
+		}
+
+		diplomatic_influence = {
+			who = HUN
+			value = 200
+		}
+	}
+
+	option = {
+		name = "EVTOPTB50006"
+
+		prestige = 5
+
+		HUN = {
+			release = TRE
+		}
+
+		HUN = {
+			release = SLV
+		}
+
+		create_vassal = TRE
+		create_vassal = SLV
+
+	}
+}
+
+#	A-2
+
+country_event = {
+	id = 50007
+	title = "EVTNAME50006"
+	desc = "EVTDESC50006"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA50006"
+
+		relation = {
+			who = HUN
+			value = 200
+		}
+
+		diplomatic_influence = {
+			who = HUN
+			value = 200
+		}
+	}
+
+	option = {
+		name = "EVTOPTB50006"
+
+		prestige = 5
+
+		HUN = {
+			release = CRO
+		}
+
+		HUN = {
+			release = SLV
+		}
+	}
+}
+
+#	B-2
+
+country_event = {
+	id = 50009
+	title = "EVTNAME50006"
+	desc = "EVTDESC50006"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA50006"
+
+		relation = {
+			who = HUN
+			value = 200
+		}
+
+		diplomatic_influence = {
+			who = HUN
+			value = 200
+		}
+	}
+
+	option = {
+		name = "EVTOPTB50006"
+
+		prestige = 5
+
+		HUN = {
+			release = CRO
+		}
+
+		HUN = {
+			release = SLV
+		}
+
+		create_vassal = CRO
+		create_vassal = SLV
+	}
+}
