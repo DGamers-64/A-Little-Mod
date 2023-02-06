@@ -84,9 +84,6 @@ political_decisions = {
 		}
 		
 		effect = {
-			FRA_412 = {
-				remove_core = FRA
-			}
 			410 = {
 				change_province_name = "Kolmar"
 			}
@@ -134,7 +131,18 @@ political_decisions = {
 
 	germany_cores_in_austria = {
 		potential = {
+
 			tag = GER
+
+			is_greater_power = yes
+
+			exists = AUS
+
+			year = 1860
+
+			average_consciousness = 8
+
+			average_militancy = 8
 
 			NOT = {
 				has_country_flag = germany_cores_in_austria
@@ -142,10 +150,24 @@ political_decisions = {
 		}
 
 		allow = {
+
 			tag = GER
+
 			is_greater_power = yes
+
 			NOT = {
 				badboy = 0.5
+			}
+
+			relation = {
+				who = AUS
+				value = -100
+			}
+
+			AUS = {
+				NOT = {
+					has_recently_lost_war = no
+				}
 			}
 		}
 

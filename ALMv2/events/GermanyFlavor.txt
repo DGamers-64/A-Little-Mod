@@ -681,3 +681,4 @@ country_event = {
 		create_vassal = SLV
 	}
 }
+

@@ -411,6 +411,18 @@ army = {
 		home = 584
 	}
 
+	regiment = {
+		name= "I. Kavalleriebrigade"
+		type = cuirassier
+		home = 552
+	}
+
+	regiment = {
+		name= "VI. Kavalleriebrigade"
+		type = dragoon
+		home = 551
+	}
+
 }
 
 army = {
@@ -462,6 +474,18 @@ army = {
 		name= "II. Artilleriebrigade"
 		type = artillery
 		home = 685
+	}
+
+	regiment = {
+		name= "II. Kavalleriebrigade"
+		type = cuirassier
+		home = 549
+	}
+
+	regiment = {
+		name= "VII. Kavalleriebrigade"
+		type = dragoon
+		home = 699
 	}
 
 }
@@ -517,6 +541,18 @@ army = {
 		home = 698
 	}
 
+	regiment = {
+		name= "III. Kavalleriebrigade"
+		type = cuirassier
+		home = 687
+	}
+
+	regiment = {
+		name= "VIII. Kavalleriebrigade"
+		type = dragoon
+		home = 699
+	}
+
 }
 
 army = {
@@ -564,6 +600,18 @@ army = {
 		home = 578
 	}
 
+	regiment = {
+		name= "IV. Kavalleriebrigade"
+		type = cuirassier
+		home = 681
+	}
+
+	regiment = {
+		name= "IX. Kavalleriebrigade"
+		type = dragoon
+		home = 700
+	}
+
 }
 
 army = {
@@ -585,6 +633,12 @@ army = {
 		name= "XXVI. Linieninfanteriebrigade"
 		type = infantry
 		home = 581
+	}
+
+	regiment = {
+		name= "V. Kavalleriebrigade"
+		type = cuirassier
+		home = 550
 	}
 
 }
@@ -610,70 +664,12 @@ army = {
 		home = 578
 	}
 
-}
-
-army = {
-	name = "VII. Korps"
-	location = 546
-	regiment = {
-		name= "I. Kavalleriebrigade"
-		type = cuirassier
-		home = 552
-	}
-
-	regiment = {
-		name= "II. Kavalleriebrigade"
-		type = cuirassier
-		home = 549
-	}
-
-	regiment = {
-		name= "III. Kavalleriebrigade"
-		type = cuirassier
-		home = 687
-	}
-
-	regiment = {
-		name= "IV. Kavalleriebrigade"
-		type = cuirassier
-		home = 681
-	}
-
-	regiment = {
-		name= "V. Kavalleriebrigade"
-		type = cuirassier
-		home = 550
-	}
-
-	regiment = {
-		name= "VI. Kavalleriebrigade"
-		type = dragoon
-		home = 551
-	}
-
-	regiment = {
-		name= "VII. Kavalleriebrigade"
-		type = dragoon
-		home = 699
-	}
-
-	regiment = {
-		name= "VIII. Kavalleriebrigade"
-		type = dragoon
-		home = 699
-	}
-
-	regiment = {
-		name= "IX. Kavalleriebrigade"
-		type = dragoon
-		home = 700
-	}
-
 	regiment = {
 		name= "X. Kavalleriebrigade"
 		type = dragoon
 		home = 692
 	}
+
 }
 
 army = {
