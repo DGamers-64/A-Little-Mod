@@ -129,183 +129,6 @@ political_decisions = {
 		}
 	}
 
-	germany_cores_in_austria = {
-		potential = {
-
-			tag = GER
-
-			is_greater_power = yes
-
-			exists = AUS
-
-			year = 1860
-
-			average_consciousness = 8
-
-			average_militancy = 8
-
-			NOT = {
-				has_country_flag = germany_cores_in_austria
-			}
-		}
-
-		allow = {
-
-			tag = GER
-
-			is_greater_power = yes
-
-			NOT = {
-				badboy = 0.5
-			}
-
-			relation = {
-				who = AUS
-				value = -100
-			}
-
-			AUS = {
-				NOT = {
-					has_recently_lost_war = no
-				}
-			}
-		}
-
-		effect = {
-			prestige = 10
-			relation = {
-				who = AUS
-				value = -200
-			}
-
-			set_country_flag = germany_cores_in_austria
-
-			626 = {
-				add_core = GER
-			}
-				
-			627 = {
-				add_core = GER
-			}
-				
-			628 = {
-				add_core = GER
-			}
-				
-			629 = {
-				add_core = GER
-			}
-				
-			630 = {
-				add_core = GER
-			}
-				
-			619 = {
-				add_core = GER
-			}
-				
-			620 = {
-				add_core = GER
-			}
-				
-			621 = {
-				add_core = GER
-			}
-				
-			622 = {
-				add_core = GER
-			}
-				
-			624 = {
-				add_core = GER
-			}
-				
-			616 = {
-				add_core = GER
-			}
-				
-			617 = {
-				add_core = GER
-			}
-			
-			618 = {
-				add_core = GER
-			}
-				
-			613 = {
-				add_core = GER
-			}
-				
-			614 = {
-				add_core = GER
-			}
-				
-			615 = {
-				add_core = GER
-			}
-				
-			612 = {
-				add_core = GER
-			}
-				
-			767 = {
-				add_core = GER
-			}
-				
-			768 = {
-				add_core = GER
-			}
-				
-			735 = {
-				add_core = GER
-			}
-				
-			734 = {
-				add_core = GER
-			}
-				
-			769 = {
-				add_core = GER
-			}
-			
-			778 = {
-				add_core = GER
-			}
-			
-			770 = {
-				add_core = GER
-			}
-				
-			736 = {
-				add_core = GER
-			}
-				
-			737 = {
-				add_core = GER
-			}
-			
-			625 = {
-				add_core = GER
-			}
-			
-			631 = {
-				add_core = GER
-			}
-
-			632 = {
-				add_core = GER
-			}
-
-			688 = {
-				add_core = GER
-			}
-
-			689 = {
-				add_core = GER
-			}
-		}
-	}
-
 	form_south_german_confederation = {
 		potential = {
 			is_greater_power = yes
@@ -931,3 +754,51 @@ unite_moldavia_wallachia = {
 	}
 
 }	
+
+form_italy_vassal = {
+	potential = {
+		NOT = {
+			exists = ITA
+		}
+
+		tag = GER
+
+		NOT = {
+			has_country_flag = italy_formed_with_GER
+		}
+	}
+
+	allow = {
+		ITA = {
+			all_core = {
+				owner = {
+					sphere_owner = GER
+				}
+			}
+		}
+	}
+
+	effect = {
+		SAR = {
+			change_tag = ITA
+		}
+
+		prestige = 20
+
+		ITA = {
+			capital = 749
+			add_accepted_culture = north_italian
+			add_accepted_culture = south_italian
+			any_country = {
+				limit = {
+					is_culture_group = italian
+				}
+				country_event = { id=11101 days=0 }
+			}
+		}
+
+		create_vassal = ITA
+
+		country_flag = italy_formed_with_GER
+	}
+}
