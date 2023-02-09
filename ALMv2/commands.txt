@@ -4,7 +4,7 @@
 
 # TARGETS
 
-# POPS
+# POPS: TARGETS
 
 any_pop
 aristocrats
@@ -31,7 +31,7 @@ is_accepted_culture
 consciousness
 militancy
 
-# PROVINCE
+# PROVINCE: TARGETS
 
 any_owned
 capital_scope
@@ -42,7 +42,7 @@ has_province_flag
 average_militancy
 average_consciousness
 
-# STATE
+# STATE: TARGETS
 
 random_state
 state_scope
@@ -52,7 +52,7 @@ average_militancy
 average_consciousness
 has_pop_type
 
-# COUNTRY
+# COUNTRY: TARGETS
 
 any_country
 any_greater_power
@@ -258,7 +258,7 @@ is_core
 is_cultural_union
 is_culture_group
 is_disarmed
-is_greater_power
+
 is_ideology_enabled
 is_independant
 is_liberation_crisis

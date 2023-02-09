@@ -157,10 +157,7 @@ country_event = {
 			}
 		}
 
-		NOT = {
-			tag = DEN
-			tag = FRA
-		}
+		cultural_union = germanic
 
 		part_of_sphere = yes
 
@@ -589,6 +586,8 @@ country_event = {
 		create_vassal = SLV
 	}
 }
+
+# Italy Formed By Germany
 
 country_event = {
 	id = 50010
