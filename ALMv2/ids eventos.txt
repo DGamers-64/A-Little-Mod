@@ -1,0 +1,11 @@
+Puppets			= 50000
+Puppet new!		= 50001
+NGF			= 50002
+Austria Disolution	= 50003
+Austrias Events		= 50004
+			= 50005
+			= 50006
+			= 50007
+			= 50008
+			= 50009
+Italy Formed By Germany	= 50010

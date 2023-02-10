@@ -753,51 +753,51 @@ unite_moldavia_wallachia = {
 		}
 	}	
 
-	form_italy_vassal = {
-		potential = {
-			NOT = {
-				exists = ITA
-			}
-
-			tag = GER
-
-			NOT = {
-				has_country_flag = italy_formed_with_GER
-			}
-		}
-
-		allow = {
-			ITA = {
-				all_core = {
-					owner = {
-						sphere_owner = GER
-					}
-				}
-			}
-		}
-
-		effect = {
-			SAR = {
-				change_tag = ITA
-			}
-
-			prestige = 20
-
-			ITA = {
-				capital = 749
-				add_accepted_culture = north_italian
-				add_accepted_culture = south_italian
-				any_country = {
-					limit = {
-						is_culture_group = italian
-					}
-					country_event = { id=11101 days=0 }
-				}
-			}
-
-			create_vassal = ITA
-
-			country_flag = italy_formed_with_GER
-		}
-	}
+#	form_italy_vassal = {
+#		potential = {
+#			NOT = {
+#				exists = ITA
+#			}
+#
+#			tag = GER
+#
+#			NOT = {
+#				has_country_flag = italy_formed_with_GER
+#			}
+#		}
+#
+#		allow = {
+#			ITA = {
+#				all_core = {
+#					owner = {
+#						sphere_owner = GER
+#					}
+#				}
+#			}
+#		}
+#
+#		effect = {
+#			SAR = {
+#				change_tag = ITA
+#			}
+#
+#			prestige = 20
+#
+#			ITA = {
+#				capital = 749
+#				add_accepted_culture = north_italian
+#				add_accepted_culture = south_italian
+#				any_country = {
+#					limit = {
+#						is_culture_group = italian
+#					}
+#					country_event = { id=11101 days=0 }
+#				}
+#			}
+#
+#			create_vassal = ITA
+#
+#			country_flag = italy_formed_with_GER
+#		}
+#	}
 }
