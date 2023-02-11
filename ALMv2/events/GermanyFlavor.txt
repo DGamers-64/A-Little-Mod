@@ -157,7 +157,7 @@ country_event = {
 			}
 		}
 
-		cultural_union = germanic
+		in_culture_group = germanic
 
 		part_of_sphere = yes
 
@@ -589,42 +589,42 @@ country_event = {
 
 # Italy Formed By Germany
 
-country_event = {
-	id = 50010
-	title = "EVTNAME50010"
-	desc = "EVTDESC50010"
-	picture = "Celebration"
-
-	trigger = {
-		tag = GER
-		has_country_flag = italy_formed_with_GER
-		OR = {
-			ITA = is_greater_power
-			NOT = {
-				ITA = {
-					overlord = GER
-				}
-			}
-		}
-	}
-
-	is_triggered_only = yes
-
-	option = {
-		name = "EVTOPTA50010"
-		war = {
-			target = ITA
-			attacker_goal = { casus_belli = humillate }
-			attacker_goal = { casus_belli = make_puppet }
-			defender_goal = { casus_belli = humillate }
-			call_ally = yes
-		}
-	}
-	
-	option = {
-		name = "EVTOPTB50010"
-		create_alliance = ITA
-		prestige = 10
-
-	}
-}
+#country_event = {
+#	id = 50010
+#	title = "EVTNAME50010"
+#	desc = "EVTDESC50010"
+#	picture = "Celebration"
+#
+#	trigger = {
+#		tag = GER
+#		has_country_flag = italy_formed_with_GER
+#		OR = {
+#			ITA = is_greater_power
+#			NOT = {
+#				ITA = {
+#					overlord = GER
+#				}
+#			}
+#		}
+#	}
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = "EVTOPTA50010"
+#		war = {
+#			target = ITA
+#			attacker_goal = { casus_belli = humillate }
+#			attacker_goal = { casus_belli = make_puppet }
+#			defender_goal = { casus_belli = humillate }
+#			call_ally = yes
+#		}
+#	}
+#	
+#	option = {
+#		name = "EVTOPTB50010"
+#		create_alliance = ITA
+#		prestige = 10
+#
+#	}
+#}
