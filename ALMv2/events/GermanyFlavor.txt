@@ -124,7 +124,7 @@ country_event = {
 		}
 		war = {
 			target = NGF
-			attacker_goal = { casus_belli = humillate }
+			attacker_goal = { casus_belli = humiliate }
 			defender_goal = { casus_belli = conquest }
 			call_ally = no
 		}
@@ -587,44 +587,48 @@ country_event = {
 	}
 }
 
-# Italy Formed By Germany
+# Vienna Siege
 
-#country_event = {
-#	id = 50010
-#	title = "EVTNAME50010"
-#	desc = "EVTDESC50010"
-#	picture = "Celebration"
-#
-#	trigger = {
-#		tag = GER
-#		has_country_flag = italy_formed_with_GER
-#		OR = {
-#			ITA = is_greater_power
-#			NOT = {
-#				ITA = {
-#					overlord = GER
-#				}
-#			}
-#		}
-#	}
-#
-#	is_triggered_only = yes
-#
-#	option = {
-#		name = "EVTOPTA50010"
-#		war = {
-#			target = ITA
-#			attacker_goal = { casus_belli = humillate }
-#			attacker_goal = { casus_belli = make_puppet }
-#			defender_goal = { casus_belli = humillate }
-#			call_ally = yes
-#		}
-#	}
-#	
-#	option = {
-#		name = "EVTOPTB50010"
-#		create_alliance = ITA
-#		prestige = 10
-#
-#	}
-#}
+country_event = {
+	id = 50010
+	title = "EVTNAME50010"
+	desc = "EVTDESC50010"
+	picture = "Parade"
+
+	trigger = {
+		619 = {
+			controlled_by = GER
+		}
+
+		AUS = {
+			NOT = {
+				military_score = 5
+			}
+		}
+
+		has_country_flag = germany_cores_in_austria
+
+		NOT = {
+			has_global_flag = vienna_siege
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+
+	}
+
+	option = {
+		name = "EVTOPTA50010"
+		end_war = AUS
+		all_core = {
+			limit = {
+				owned_by = AUS
+			}
+
+			secede_province = GER
+
+			set_global_flag = vienna_siege
+		}
+	}
+}

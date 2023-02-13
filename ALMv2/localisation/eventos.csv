@@ -22,10 +22,10 @@ EVTOPTB50004;I don't think it's a good idea to give him too much;;;;;;;;;;;;;x
 EVTNAME50006;Treaty of Budapest - Hungary;;;;;;;;;;;;;x
 EVTDESC50006;With Hungary we also have a problem, we can either liberate Slovakia and Trieste or we can make the whole kingdom of Hungary independent in its entirety. What should we do?;;;;;;;;;;;;;x
 EVTOPTA50006;Hungary is great!;;;;;;;;;;;;;x
-EVTOPTB50006;A big country is a big problem�;;;;;;;;;;;;;x
-EVTNAME50010;Italy becomes powerful;;;;;;;;;;;;;x
-EVTOPTA50010;We will go to war if necessary!;;;;;;;;;;;;;x
-EVTOPTB50010;We can grant them independence;;;;;;;;;;;;;x
+EVTOPTB50006;A big country is a big problem!;;;;;;;;;;;;;x
+EVTNAME50010;Vienna Siege;;;;;;;;;;;;;x
+EVTDESC50010;Our brave soldiers have besieged Vienna, and here they have been able to capture the mighty Habsburg emperor! Now he has surrendered unconditionally and victory over Austria is ours.;;;;;;;;;;;;;x
+EVTOPTA50010;Great!;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x
