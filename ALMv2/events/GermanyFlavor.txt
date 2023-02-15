@@ -157,7 +157,31 @@ country_event = {
 			}
 		}
 
-		in_culture_group = germanic
+		OR = {
+			tag = ANH
+			tag = BAD
+			tag = BAV
+			tag = BRA
+			tag = BRE
+			tag = COB
+			tag = ELS
+			tag = HAM
+			tag = HAN
+			tag = HEK
+			tag = HES
+			tag = HOL
+			tag = LIP
+			tag = LUB
+			tag = LUX
+			tag = MEC
+			tag = MEI
+			tag = NAS
+			tag = OLD
+			tag = SAX
+			tag = SCH
+			tag = WEI
+			tag = WUR
+		}
 
 		part_of_sphere = yes
 

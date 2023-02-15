@@ -373,7 +373,7 @@ has_national_minority
 has_pop_type
 has_province_flag
 has_province_modifier
-hsa_recent_imigration
+has_recent_imigration
 is_accepted_culture
 is_blockaded
 is_capital
