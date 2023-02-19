@@ -14,8 +14,8 @@ give_gift_desc;Acquire an enemy state for a sphere member.;;;;;;;;;;;;;x
 WAR_STATE_OTHER_NAME;$ORDER$$FIRST$ War for $COUNTRY_ADJ$ adquisition;;;;;;;;;;;;;x
 NORMAL_WAR_STATE_OTHER_NAME;$ORDER$$FIRST$ War for $COUNTRY_ADJ$ adquisition;;;;;;;;;;;;;x
 AGRESSION_WAR_STATE_OTHER_NAME;$ORDER$$FIRST$ War for $COUNTRY_ADJ$ adquisition;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
+IGNORE_DECISION_OFF;Ignore Decision;;;;;;;;;;;;;x
+IGNORE_DECISION_ON;Notify Decision;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x

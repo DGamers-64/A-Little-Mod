@@ -258,7 +258,6 @@ is_core
 is_cultural_union
 is_culture_group
 is_disarmed
-
 is_ideology_enabled
 is_independant
 is_liberation_crisis

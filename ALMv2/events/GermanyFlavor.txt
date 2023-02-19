@@ -656,3 +656,28 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 50011
+	title = "EVTNAME50011"
+	desc = "EVTDESC50011"
+	picture = "Rebellion"
+
+	trigger = {
+		tag = HRE
+		capital_scope = {
+			controlled_by_rebels = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = "EVTOPTA50011"
+		REB = {
+			inherit = THIS
+		}
+	}	
+}

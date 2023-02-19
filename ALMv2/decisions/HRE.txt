@@ -1,0 +1,97 @@
+political_decisions = {
+    form_hre = {
+		potential = {
+            is_culture_group = germanic
+            NOT = {
+                exists = HRE
+                tag = ISR
+            }
+        }
+    	allow = {
+            is_greater_power = yes
+            prestige = 45
+            war = no
+    
+            all_core = {
+                owner = GER    
+            }
+
+            BEL = {
+                all_core = {
+                    owner = GER    
+                }
+            }
+            
+            VEN = {
+                all_core = {
+                    owner = GER    
+                }
+            }
+
+            LOM = {
+                all_core = {
+                    owner = GER    
+                }
+            }
+
+            SAR = {
+                all_core = {
+                    owner = GER    
+                }
+            }
+
+            SWI = {
+                all_core = {
+                    owner = GER    
+                }
+            }
+        }
+
+        effect = {
+            prestige = 20
+            change_tag = HRE
+            add_accepted_culture = north_german
+            add_accepted_culture = south_german
+
+            GER = {
+                all_core = {
+                    add_core = HRE
+                }
+            }
+
+            BEL = {
+                all_core = {
+                    add_core = HRE
+                }
+            }
+
+            SWI = {
+                all_core = {
+                    add_core = HRE
+                }
+            }
+            
+            SAR = {
+                all_core = {
+                    add_core = HRE
+                }
+            }
+
+            VEN = {
+                all_core = {
+                    add_core = HRE
+                }
+            }
+
+            LOM = {
+                all_core = {
+                    add_core = HRE
+                }
+            }
+            
+    	}
+	    ai_will_do = {
+		    factor = 1
+	    }
+    }
+}
