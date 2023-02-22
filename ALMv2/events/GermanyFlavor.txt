@@ -1902,7 +1902,6 @@ country_event = {
 			value = 200
 		}
 		set_country_flag = hungary_released
-		country_event = { id=50023 days=5 }
 	}
 
 	option = {
@@ -1990,7 +1989,6 @@ country_event = {
 			value = 200
 		}
 		set_country_flag = hungary_released
-		country_event = { id=50023 days=5 }
 	}		
 }
 
@@ -2032,33 +2030,5 @@ country_event = {
 			}
 			call_ally = yes
 		}
-	}
-}
-
-country_event = {
-	id = 50023
-	title = "EVTNAME50023"
-	desc = "EVTDESC50023"
-	picture = "HRE Exterior"
-
-	trigger = {
-		tag = HRE
-		war = no
-		has_country_flag = hungary_released
-		any_owned_province = {
-			is_core = no
-		}
-	}
-
-	option = {
-		name = "EVTOPTA50023"
-		prestige = 15
-		any_owned_province = {
-			limit = {
-				is_core = no
-			}
-			secede_province = HRC
-		}
-		create_vassal = HRC
 	}
 }
