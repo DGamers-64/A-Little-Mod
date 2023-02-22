@@ -264,8 +264,18 @@ JAN 	= "countries/JanMayen.txt"
 ##ALMv2
 ALS        = "countries/Elsass.txt"
 GLM        = "countries/Galicia-Lodomeria.txt"
-TRE        = "countries/Trieste.txt"
 HRE        = "countries/Holy Roman Empire.txt"
+WES        = "countries/Westfalen.txt"
+RHI        = "countries/Rhineland.txt"
+POM        = "countries/Pomerania.txt"
+VOJ        = "countries/Vojvodina.txt"
+STI        = "countries/South Tirol.txt"
+SVY        = "countries/Savoy.txt"
+DLM        = "countries/Dalmatia.txt"
+NEH        = "countries/Neuchatel Canton.txt"
+SGM        = "countries/Sigmaringen-Hohe.txt"
+LBG        = "countries/Limburg.txt"
+HRC        = "countries/Holy Roman Company.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes # any tags after this is considered dynamic dominions

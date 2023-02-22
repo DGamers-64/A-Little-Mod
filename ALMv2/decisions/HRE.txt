@@ -1,97 +1,86 @@
 political_decisions = {
-    form_hre = {
+	form_hre = {
 		potential = {
-            is_culture_group = germanic
-            NOT = {
-                exists = HRE
-                tag = ISR
-            }
-        }
-    	allow = {
-            is_greater_power = yes
-            prestige = 45
-            war = no
-    
-            all_core = {
-                owner = GER    
-            }
+			is_culture_group = germanic
+			NOT = {
+				exists = HRE
+				tag = ISR
+			}
+		}
 
-            BEL = {
-                all_core = {
-                    owner = GER    
-                }
-            }
-            
-            VEN = {
-                all_core = {
-                    owner = GER    
-                }
-            }
+		allow = {
+			is_greater_power = yes
+			prestige = 500
+			war = no
+		}
 
-            LOM = {
-                all_core = {
-                    owner = GER    
-                }
-            }
+		effect = {
+			prestige = 20
+			change_tag = HRE
+			add_accepted_culture = north_german
+			add_accepted_culture = south_german
 
-            SAR = {
-                all_core = {
-                    owner = GER    
-                }
-            }
+			GER = {
+				all_core = {
+					add_core = HRE
+				}
+			}
 
-            SWI = {
-                all_core = {
-                    owner = GER    
-                }
-            }
-        }
+			BEL = {
+				all_core = {
+					add_core = HRE
+				}
+			}
 
-        effect = {
-            prestige = 20
-            change_tag = HRE
-            add_accepted_culture = north_german
-            add_accepted_culture = south_german
+			SWI = {
+				all_core = {
+					add_core = HRE
+				}
+			}
 
-            GER = {
-                all_core = {
-                    add_core = HRE
-                }
-            }
+			SAR = {
+				all_core = {
+					add_core = HRE
+				}
+			}
 
-            BEL = {
-                all_core = {
-                    add_core = HRE
-                }
-            }
+			VEN = {
+				all_core = {
+					add_core = HRE
+				}
+			}
 
-            SWI = {
-                all_core = {
-                    add_core = HRE
-                }
-            }
-            
-            SAR = {
-                all_core = {
-                    add_core = HRE
-                }
-            }
+			LOM = {
+				all_core = {
+					add_core = HRE
+				}
+			}
 
-            VEN = {
-                all_core = {
-                    add_core = HRE
-                }
-            }
-
-            LOM = {
-                all_core = {
-                    add_core = HRE
-                }
-            }
-            
-    	}
-	    ai_will_do = {
-		    factor = 1
-	    }
-    }
+			inherit = LOM
+			inherit = VEN
+			inherit = SAR
+			inherit = SWI
+			inherit = FLA
+			inherit = WLL
+			inherit = BEL
+			inherit = HUN
+			inherit = SLO
+			inherit = GER
+			inherit = TRE
+			inherit = CRO
+			inherit = KRA
+			inherit = GLM
+			inherit = LUC
+			inherit = PAR
+			inherit = TUS
+			inherit = PAP
+			inherit = MOD
+			NET = {
+				country_event = { id=50022 days=5 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

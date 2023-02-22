@@ -78,27 +78,4 @@ political_decisions = {
             }
         }
     }
-
-    cores_hre = {
-        potential = {
-            tag = GER
-        }
-    
-        allow = {
-            tag = GER
-            prestige = 10
-        }
-    
-        effect = {
-            prestige = 10
-            release_vassal = VEN
-            AUS_729 = {
-                add_core = HRE
-            }
-
-            AUS_726 = {
-                add_core = HRE
-            }
-        }
-    }
 }

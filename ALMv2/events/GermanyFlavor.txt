@@ -213,9 +213,11 @@ country_event = {
 
 	option = {
 		name = "EVTOPTB50000"
-		relation = {
-			who = sphere_owner
-			value = -200
+		sphere_owner = {
+			relation = {
+				who = THIS
+				value = -200
+			}
 		}
 
 		treasury = -10000
@@ -680,4 +682,1383 @@ country_event = {
 			inherit = THIS
 		}
 	}	
+}
+
+country_event = {
+	id = 50012
+	title = "EVTNAME50012"
+	desc = "EVTDESC50012"
+	picture = "Saxony"
+
+	trigger = {
+		tag = HRE
+		war = no
+		NOT = {
+			has_country_flag = saxony_released
+		}
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = "EVTOPTA50012"
+		prestige = 15
+		release = SAX
+		create_vassal = SAX
+		SAX_558 = {
+			secede_province = SAX
+		}
+		
+		diplomatic_influence = {
+			who = SAX
+			value = 250
+		}
+		set_country_flag = saxony_released
+		country_event = { id=50013 days=5 }
+	}
+
+	option = {
+		name = "EVTOPTB50012"
+		prestige = 15
+		release = COB
+		release = MEI
+		release = WEI
+		release = SAX
+		687 = {
+			secede_province = SAX
+		}
+		create_vassal = SAX
+		create_vassal = MEI
+		create_vassal = WEI
+		create_vassal = COB
+		release = COB
+		release = MEI
+		release = WEI
+		release = SAX
+		687 = {
+			secede_province = SAX
+		}
+		create_vassal = SAX
+		create_vassal = MEI
+		create_vassal = WEI
+		create_vassal = COB
+		
+		diplomatic_influence = {
+			who = SAX
+			value = 250
+		}
+		diplomatic_influence = {
+			who = MEI
+			value = 250
+		}
+		diplomatic_influence = {
+			who = WEI
+			value = 250
+		}
+		diplomatic_influence = {
+			who = COB
+			value = 250
+		}
+		set_country_flag = saxony_released
+		country_event = { id=50013 days=5 }
+	}
+}
+
+country_event = {
+	id = 50013
+	title = "EVTNAME50013"
+	desc = "EVTDESC50013"
+	picture = "Hanover"
+
+	trigger = {
+		tag = HRE
+		war = no
+		has_country_flag = saxony_released
+		NOT = {
+			has_country_flag = hanover_released
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA50013"
+		prestige = 15
+		release = HAN
+		create_vassal = HAN
+		HAN_534 = {
+			secede_province = HAN
+		}
+		533 = {
+			secede_province = HAN
+		}
+		531 = {
+			secede_province = HAN
+		}
+		539 = {
+			secede_province = HAN
+		}
+		532 = {
+			secede_province = HAN
+		}
+		536 = {
+			secede_province = HAN
+		}
+		537 = {
+			secede_province = HAN
+		}
+		555 = {
+			secede_province = HAN
+		}
+		
+		diplomatic_influence = {
+			who = HAN
+			value = 250
+		}
+		set_country_flag = hanover_released
+		country_event = { id=50014 days=5 }
+	}
+	
+	option = {
+		name = "EVTOPTB50013"
+		prestige = 15
+		release = HAN
+		release = OLD
+		release = BRE
+		release = BRA
+		release = ANH
+		release = LIP
+		533 = {
+			secede_province = OLD
+		}
+		create_vassal = HAN
+		create_vassal = OLD
+		create_vassal = BRE
+		create_vassal = BRA
+		create_vassal = ANH
+		create_vassal = LIP
+		release = HAN
+		release = OLD
+		release = BRE
+		release = BRA
+		release = ANH
+		release = LIP
+		533 = {
+			secede_province = OLD
+		}
+		create_vassal = HAN
+		create_vassal = OLD
+		create_vassal = BRE
+		create_vassal = BRA
+		create_vassal = ANH
+		create_vassal = LIP
+		
+		diplomatic_influence = {
+			who = HAN
+			value = 250
+		}
+		diplomatic_influence = {
+			who = OLD
+			value = 250
+		}
+		diplomatic_influence = {
+			who = BRE
+			value = 250
+		}
+		diplomatic_influence = {
+			who = BRA
+			value = 250
+		}
+		diplomatic_influence = {
+			who = ANH
+			value = 250
+		}
+		diplomatic_influence = {
+			who = LIP
+			value = 250
+		}
+		set_country_flag = hanover_released
+		country_event = { id=50014 days=5 }
+	}
+}
+
+country_event = {
+	id = 50014
+	title = "EVTNAME50014"
+	desc = "EVTDESC50014"
+	picture = "Mecklemburg"
+
+	trigger = {
+		tag = HRE
+		war = no
+		has_country_flag = hanover_released
+		NOT = {
+			has_country_flag = mecklemburg_released
+		}
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = "EVTOPTA50014"
+		prestige = 15
+		MEC_544 = {
+			secede_province = MEC
+		}
+		PRU_546 = {
+			secede_province = MEC
+		}
+		528 = {
+			secede_province = MEC
+		}
+		create_vassal = MEC
+		MEC_544 = {
+			secede_province = MEC
+		}
+		PRU_546 = {
+			secede_province = MEC
+		}
+		528 = {
+			secede_province = MEC
+		}
+		create_vassal = MEC
+		
+		diplomatic_influence = {
+			who = MEC
+			value = 250
+		}
+		set_country_flag = mecklemburg_released
+		country_event = { id=50015 days=5 }
+	}
+
+	option = {
+		name = "EVTOPTB50014"
+		prestige = 15
+		release = MEC
+		release = HAM
+		release = SCH
+		release = HOL
+		release = LUB
+		546 = {
+			secede_province = POM
+		}
+		547 = {
+			secede_province = POM
+		}
+		548 = {
+			secede_province = POM
+		}
+		679 = {
+			secede_province = POM
+		}
+		680 = {
+			secede_province = POM
+		}
+		create_vassal = MEC
+		create_vassal = HAM
+		create_vassal = SCH
+		create_vassal = HOL
+		create_vassal = LUB
+		create_vassal = POM
+				release = MEC
+		release = HAM
+		release = SCH
+		release = HOL
+		release = LUB
+		546 = {
+			secede_province = POM
+		}
+		547 = {
+			secede_province = POM
+		}
+		548 = {
+			secede_province = POM
+		}
+		679 = {
+			secede_province = POM
+		}
+		680 = {
+			secede_province = POM
+		}
+		create_vassal = MEC
+		create_vassal = HAM
+		create_vassal = SCH
+		create_vassal = HOL
+		create_vassal = LUB
+		create_vassal = POM
+		
+		diplomatic_influence = {
+			who = MEC
+			value = 250
+		}
+		diplomatic_influence = {
+			who = HAM
+			value = 250
+		}
+		diplomatic_influence = {
+			who = SCH
+			value = 250
+		}
+		diplomatic_influence = {
+			who = HOL
+			value = 250
+		}
+		diplomatic_influence = {
+			who = LUB
+			value = 250
+		}
+		diplomatic_influence = {
+			who = POM
+			value = 250
+		}
+		set_country_flag = mecklemburg_released
+		country_event = { id=50015 days=5 }
+	}	
+}
+
+country_event = {
+	id = 50015
+	title = "EVTNAME50015"
+	desc = "EVTDESC50015"
+	picture = "Westfalia"
+
+	trigger = {
+		tag = HRE
+		war = no
+		has_country_flag = mecklemburg_released
+		NOT = {
+			has_country_flag = westfalia_released
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA50015"
+		prestige = 15
+		PRU_581 = {
+			secede_province = WES
+		}
+		PRU_575 = {
+			secede_province = WES
+		}
+		HES_2560 = {
+			secede_province = WES
+		}
+		HEK_568 = {
+			secede_province = WES
+		}
+		570 = {
+			secede_province = WES
+		}
+		572 = {
+			secede_province = WES
+		}
+		573 = {
+			secede_province = WES
+		}
+		574 = {
+			secede_province = WES
+		}
+		create_vassal = WES
+		PRU_581 = {
+			secede_province = WES
+		}
+		PRU_575 = {
+			secede_province = WES
+		}
+		HES_2560 = {
+			secede_province = WES
+		}
+		HEK_568 = {
+			secede_province = WES
+		}
+		570 = {
+			secede_province = WES
+		}
+		572 = {
+			secede_province = WES
+		}
+		573 = {
+			secede_province = WES
+		}
+		574 = {
+			secede_province = WES
+		}
+		create_vassal = WES
+		
+		diplomatic_influence = {
+			who = WES
+			value = 250
+		}
+		set_country_flag = westfalia_released
+		country_event = { id=50016 days=5 }
+	}
+	
+	option = {
+		name = "EVTOPTB50015"
+		prestige = 15
+		release = HES
+		release = HEK
+		release = NAS
+		release = FRM
+		PRU_581 = {
+			secede_province = WES
+		}
+		578 = {
+			secede_province = WES
+		}
+		579 = {
+			secede_province = WES
+		}
+		2561 = {
+			secede_province = WES
+		}
+		572 = {
+			secede_province = RHI
+		}
+		573 = {
+			secede_province = RHI
+		}
+		574 = {
+			secede_province = RHI
+		}
+		575 = {
+			secede_province = RHI
+		}
+		576 = {
+			secede_province = RHI
+		}
+		577 = {
+			secede_province = RHI
+		}
+		create_vassal = HES
+		create_vassal = HEK
+		create_vassal = NAS
+		create_vassal = FRM
+		create_vassal = WES
+		create_vassal = RHI
+		release = HES
+		release = HEK
+		release = NAS
+		release = FRM
+		PRU_581 = {
+			secede_province = WES
+		}
+		578 = {
+			secede_province = WES
+		}
+		579 = {
+			secede_province = WES
+		}
+		2561 = {
+			secede_province = WES
+		}
+		572 = {
+			secede_province = RHI
+		}
+		573 = {
+			secede_province = RHI
+		}
+		574 = {
+			secede_province = RHI
+		}
+		575 = {
+			secede_province = RHI
+		}
+		576 = {
+			secede_province = RHI
+		}
+		577 = {
+			secede_province = RHI
+		}
+		create_vassal = HES
+		create_vassal = HEK
+		create_vassal = NAS
+		create_vassal = FRM
+		create_vassal = WES
+		create_vassal = RHI
+		diplomatic_influence = {
+			who = HES
+			value = 250
+		}
+		diplomatic_influence = {
+			who = HEK
+			value = 250
+		}
+		diplomatic_influence = {
+			who = NAS
+			value = 250
+		}
+		diplomatic_influence = {
+			who = FRM
+			value = 250
+		}
+		diplomatic_influence = {
+			who = WES
+			value = 250
+		}
+		diplomatic_influence = {
+			who = RHI
+			value = 250
+		}
+		set_country_flag = westfalia_released
+		country_event = { id=50016 days=5 }
+	}
+}
+
+country_event = {
+	id = 50016
+	title = "EVTNAME50016"
+	desc = "EVTDESC50016"
+	picture = "Poland"
+
+	trigger = {
+		tag = HRE
+		war = no
+		has_country_flag = westfalia_released
+		NOT = {
+			has_country_flag = poland_released
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA50016"
+		prestige = 15
+		PRU_695 = {
+			secede_province = POL
+		}
+		PRU_690 = {
+			secede_province = POL
+		}
+		PRU_701 = {
+			secede_province = POL
+		}
+		PRU_682 = {
+			secede_province = POL
+		}
+		AUS_702 = {
+			secede_province = POL
+		}
+		AUS_662 = {
+			secede_province = POL
+		}
+		create_vassal = POL
+		PRU_695 = {
+			secede_province = POL
+		}
+		PRU_690 = {
+			secede_province = POL
+		}
+		PRU_701 = {
+			secede_province = POL
+		}
+		PRU_682 = {
+			secede_province = POL
+		}
+		AUS_702 = {
+			secede_province = POL
+		}
+		AUS_662 = {
+			secede_province = POL
+		}
+		create_vassal = POL
+		
+		diplomatic_influence = {
+			who = POL
+			value = 250
+		}
+		set_country_flag = poland_released
+		country_event = { id=50017 days=5 }		
+	}
+
+	option = {
+		name = "EVTOPTB50016"
+		prestige = 15
+		release = DZG
+		release = LIT
+		release = KRA
+		release = GLM
+		release = POL
+		create_vassal = DZG
+		create_vassal = LIT
+		create_vassal = KRA
+		create_vassal = GLM
+		create_vassal = POL
+		release = DZG
+		release = LIT
+		release = KRA
+		release = GLM
+		release = POL
+		create_vassal = DZG
+		create_vassal = LIT
+		create_vassal = KRA
+		create_vassal = GLM
+		create_vassal = POL
+		set_country_flag = poland_released
+		
+		diplomatic_influence = {
+			who = DZG
+			value = 250
+		}
+		diplomatic_influence = {
+			who = LIT
+			value = 250
+		}
+		diplomatic_influence = {
+			who = KRA
+			value = 250
+		}
+		diplomatic_influence = {
+			who = GLM
+			value = 250
+		}
+		diplomatic_influence = {
+			who = POL
+			value = 250
+		}
+		country_event = { id=50017 days=5 }
+	}
+}
+
+country_event = {
+	id = 50017
+	title = "EVTNAME50017"
+	desc = "EVTDESC50017"
+	picture = "Flanders"
+
+	trigger = {
+		tag = HRE
+		war = no
+		has_country_flag = poland_released
+		NOT = {
+			has_country_flag = flanders_released
+		}
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = "EVTOPTA50017"
+		prestige = 15
+		release = FLA
+		BEL_394 = {
+			secede_province = FLA
+		}
+		FRA_412 = {
+			secede_province = FLA
+		}
+		NET_381 = {
+			secede_province = FLA
+		}
+		create_vassal = FLA
+		release = FLA
+		BEL_394 = {
+			secede_province = FLA
+		}
+		FRA_412 = {
+			secede_province = FLA
+		}
+		NET_381 = {
+			secede_province = FLA
+		}
+		create_vassal = FLA
+		
+		diplomatic_influence = {
+			who = FLA
+			value = 200
+		}
+		set_country_flag = flanders_released
+		country_event = { id=50018 days=5 }
+	}
+
+	option = {
+		name = "EVTOPTB50017"
+		prestige = 15
+		release = FLA
+		release = WLL
+		release = ALS
+		release = LUX
+		release = LBG
+		NET_381 = {
+			secede_province = LBG
+		}
+		create_vassal = FLA
+		create_vassal = WLL
+		create_vassal = ALS
+		create_vassal = LUX
+		create_vassal = LBG
+		release = FLA
+		release = WLL
+		release = ALS
+		release = LUX
+		release = LBG
+		NET_381 = {
+			secede_province = LBG
+		}
+		create_vassal = FLA
+		create_vassal = WLL
+		create_vassal = ALS
+		create_vassal = LUX
+		create_vassal = LBG
+		diplomatic_influence = {
+			who = FLA
+			value = 200
+		}
+		diplomatic_influence = {
+			who = WLL
+			value = 200
+		}
+		diplomatic_influence = {
+			who = ALS
+			value = 200
+		}
+		diplomatic_influence = {
+			who = LUX
+			value = 200
+		}
+		diplomatic_influence = {
+			who = LBG
+			value = 200
+		}
+		set_country_flag = flanders_released
+		country_event = { id=50018 days=5 }
+	}
+}
+
+country_event = {
+	id = 50018
+	title = "EVTNAME50018"
+	desc = "EVTDESC50018"
+	picture = "Baviera"
+
+	trigger = {
+		tag = HRE
+		war = no
+		has_country_flag = flanders_released
+		NOT = {
+			has_country_flag = baviera_released
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA50018"
+		prestige = 15
+		release = BAV
+		WUR_589 = {
+			secede_province = BAV
+		}
+		BAD_586 = {
+			secede_province = BAV
+		}
+		create_vassal = BAV
+		release = BAV
+		WUR_589 = {
+			secede_province = BAV
+		}
+		BAD_586 = {
+			secede_province = BAV
+		}
+		create_vassal = BAV
+
+		diplomatic_influence = {
+			who = BAV
+			value = 200
+		}
+		country_event = { id=50019 days=5 }
+		set_country_flag = baviera_released
+	}
+	
+	option = {
+		name = "EVTOPTB50018"
+		prestige = 15
+		release = BAV
+		release = SGM
+		release = WUR
+		release = BAD
+		594 = {
+			secede_province = SGM
+		}
+		create_vassal = BAV
+		create_vassal = SGM
+		create_vassal = WUR
+		create_vassal = BAD
+		release = BAV
+		release = SGM
+		release = WUR
+		release = BAD
+		594 = {
+			secede_province = SGM
+		}
+		create_vassal = BAV
+		create_vassal = SGM
+		create_vassal = WUR
+		create_vassal = BAD
+
+		diplomatic_influence = {
+			who = BAV
+			value = 200
+		}
+		diplomatic_influence = {
+			who = SGM
+			value = 200
+		}
+		diplomatic_influence = {
+			who = WUR
+			value = 200
+		}
+		diplomatic_influence = {
+			who = BAD
+			value = 200
+		}
+		country_event = { id=50019 days=5 }
+		set_country_flag = baviera_released
+	}
+}
+
+country_event = {
+	id = 50019
+	title = "EVTNAME50019"
+	desc = "EVTDESC50019"
+	picture = "Austria"
+
+	trigger = {
+		tag = HRE
+		war = no
+		has_country_flag = baviera_released
+		NOT = {
+			has_country_flag = austria_released
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPT50019"
+		prestige = 15
+		SWI_603 = {
+			secede_province = AUS
+		}
+		SWI_605 = {
+			secede_province = AUS
+		}
+		AUS_734 = {
+			secede_province = AUS
+		}
+		AUS_612 = {
+			secede_province = AUS
+		}
+		AUS_613 = {
+			secede_province = AUS
+		}
+		AUS_619 = {
+			secede_province = AUS
+		}
+		AUS_625 = {
+			secede_province = AUS
+		}
+		AUS_626 = {
+			secede_province = AUS
+		}
+		create_vassal = AUS
+		SWI_603 = {
+			secede_province = AUS
+		}
+		SWI_605 = {
+			secede_province = AUS
+		}
+		AUS_734 = {
+			secede_province = AUS
+		}
+		AUS_612 = {
+			secede_province = AUS
+		}
+		AUS_613 = {
+			secede_province = AUS
+		}
+		AUS_619 = {
+			secede_province = AUS
+		}
+		AUS_625 = {
+			secede_province = AUS
+		}
+		AUS_626 = {
+			secede_province = AUS
+		}
+		create_vassal = AUS
+
+		diplomatic_influence = {
+			who = AUS
+			value = 200
+		}
+		set_country_flag = austria_released
+		country_event = { id=50020 days=5 }
+	}
+
+	option = {
+		name = "EVTOPTB50019"
+		prestige = 15
+		release = NEH
+		608 = {
+			secede_province = NEH
+		}
+		release = SWI
+		release = STI
+		734 = {
+			secede_province = STI
+		}
+		735 = {
+			secede_province = STI
+		}
+		release = BOH
+		AUS_612 = {
+			secede_province = AUS
+		}
+		AUS_613 = {
+			secede_province = AUS
+		}
+		AUS_619 = {
+			secede_province = AUS
+		}
+		create_vassal = NEH
+		create_vassal = SWI
+		create_vassal = STI
+		create_vassal = BOH
+		create_vassal = AUS
+		release = NEH
+		608 = {
+			secede_province = NEH
+		}
+		release = SWI
+		release = STI
+		734 = {
+			secede_province = STI
+		}
+		735 = {
+			secede_province = STI
+		}
+		release = BOH
+		AUS_612 = {
+			secede_province = AUS
+		}
+		AUS_613 = {
+			secede_province = AUS
+		}
+		AUS_619 = {
+			secede_province = AUS
+		}
+		create_vassal = NEH
+		create_vassal = SWI
+		create_vassal = STI
+		create_vassal = BOH
+		create_vassal = AUS
+
+		diplomatic_influence = {
+			who = NEH
+			value = 200
+		}
+		diplomatic_influence = {
+			who = SWI
+			value = 200
+		}
+		diplomatic_influence = {
+			who = STI
+			value = 200
+		}
+		diplomatic_influence = {
+			who = BOH
+			value = 200
+		}
+		diplomatic_influence = {
+			who = AUS
+			value = 200
+		}
+		set_country_flag = austria_released
+		country_event = { id=50020 days=5 }
+	}
+}
+
+country_event = {
+	id = 50020
+	title = "EVTNAME50020"
+	desc = "EVTDESC50020"
+	picture = "Piamonte"
+
+	trigger = {
+		tag = HRE
+		war = no
+		has_country_flag = austria_released
+		NOT = {
+			has_country_flag = piamonte_released
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA50020"
+		prestige = 15
+		SAR_466 = {
+			secede_province = SAR
+		}
+		472 = {
+			secede_province = SAR
+		}
+		SAR_720 = {
+			secede_province = SAR
+		}
+		MOD_739 = {
+			secede_province = SAR
+		}
+		AUS_726 = {
+			secede_province = SAR
+		}
+		TUS_744 = {
+			secede_province = SAR
+		}
+		PAP_741 = {
+			secede_province = SAR
+		}
+		PAP_752 = {
+			secede_province = SAR
+		}
+		AUS_729 = {
+			secede_province = SAR
+		}
+		AUS_736 = {
+			secede_province = SAR
+		}
+		AUS_768 = {
+			secede_province = SAR
+		}
+		SAR_765 = {
+			secede_province = SAR
+		}
+		create_vassal = SAR
+
+		diplomatic_influence = {
+			who = SAR
+			value = 200
+		}
+		set_country_flag = piamonte_released
+		country_event = { id=50021 days=5 }
+	}
+
+	option = {
+		name = "EVTOPTB50020"
+		prestige = 15
+		release = SVY
+		SAR_466 = {
+			secede_province = SVY
+		}
+		release = SAR
+		release = PAR
+		release = TUS
+		release = PAP
+		736 = {
+			secede_province = TRE
+		}
+		release = SLO
+		release = MOD
+		release = LUC
+		release = LOM
+		release = VEN
+		create_vassal = SVY
+		create_vassal = SAR
+		create_vassal = PAR
+		create_vassal = TUS
+		create_vassal = PAP
+		create_vassal = TRE
+		create_vassal = SLO
+		create_vassal = MOD
+		create_vassal = LUC
+		create_vassal = LOM
+		create_vassal = VEN
+		release = SVY
+		SAR_466 = {
+			secede_province = SVY
+		}
+		release = SAR
+		release = PAR
+		release = TUS
+		release = PAP
+		736 = {
+			secede_province = TRE
+		}
+		release = SLO
+		release = MOD
+		release = LUC
+		release = LOM
+		release = VEN
+		create_vassal = SVY
+		create_vassal = SAR
+		create_vassal = PAR
+		create_vassal = TUS
+		create_vassal = PAP
+		create_vassal = TRE
+		create_vassal = SLO
+		create_vassal = MOD
+		create_vassal = LUC
+		create_vassal = LOM
+		create_vassal = VEN
+
+		diplomatic_influence = {
+			who = SVY
+			value = 200
+		}
+		diplomatic_influence = {
+			who = SAR
+			value = 200
+		}
+		diplomatic_influence = {
+			who = PAR
+			value = 200
+		}
+		diplomatic_influence = {
+			who = TUS
+			value = 200
+		}
+		diplomatic_influence = {
+			who = PAP
+			value = 200
+		}
+		diplomatic_influence = {
+			who = TRE
+			value = 200
+		}
+		diplomatic_influence = {
+			who = SLO
+			value = 200
+		}
+		diplomatic_influence = {
+			who = MOD
+			value = 200
+		}
+		diplomatic_influence = {
+			who = LUC
+			value = 200
+		}
+		diplomatic_influence = {
+			who = VEN
+			value = 200
+		}
+		diplomatic_influence = {
+			who = LOM
+			value = 200
+		}
+		set_country_flag = piamonte_released
+		country_event = { id=50021 days=5 }
+	}
+			
+}
+
+country_event = {
+	id = 50021
+	title = "EVTNAME50021"
+	desc = "EVTDESC50021"
+	picture = "Hungary"
+
+	trigger = {
+		tag = HRE
+		war = no
+		has_country_flag = hungary_released
+		NOT = {
+			has_country_flag = hungary_released
+		}
+	}
+
+	option = {
+		name = "EVTOPTA50021"
+		prestige = 15
+		release = HUN
+		AUS_780 = {
+			secede_province = HUN
+		}
+		662 = {
+			secede_province = HUN
+		}
+		663 = {
+			secede_province = HUN
+		}
+		create_vassal = HUN
+		release = HUN
+		AUS_780 = {
+			secede_province = HUN
+		}
+		662 = {
+			secede_province = HUN
+		}
+		663 = {
+			secede_province = HUN
+		}
+		create_vassal = HUN
+
+		diplomatic_influence = {
+			who = HUN
+			value = 200
+		}
+		set_country_flag = hungary_released
+		country_event = { id=50023 days=5 }
+	}
+
+	option = {
+		name = "EVTOPTB50021"
+		prestige = 15
+		release = DLM
+		AUS_780 = {
+			secede_province = DLM
+		}
+		release = SLV
+		release = RUT
+		662 = {
+			secede_province = RUT
+		}
+		663 = {
+			secede_province = RUT
+		}
+		release = VOJ
+		AUS_777 = {
+			secede_province = VOJ
+		}
+		release = CRO
+		release = SIE
+		release = HUN
+		create_vassal = DLM
+		create_vassal = SLV
+		create_vassal = RUT
+		create_vassal = VOJ
+		create_vassal = CRO
+		create_vassal = SIE
+		create_vassal = HUN
+		release = DLM
+		AUS_780 = {
+			secede_province = DLM
+		}
+		release = SLV
+		release = RUT
+		662 = {
+			secede_province = RUT
+		}
+		663 = {
+			secede_province = RUT
+		}
+		release = VOJ
+		AUS_777 = {
+			secede_province = VOJ
+		}
+		release = CRO
+		release = SIE
+		release = HUN
+		create_vassal = DLM
+		create_vassal = SLV
+		create_vassal = RUT
+		create_vassal = VOJ
+		create_vassal = CRO
+		create_vassal = SIE
+		create_vassal = HUN
+
+		diplomatic_influence = {
+			who = DLM
+			value = 200
+		}
+		diplomatic_influence = {
+			who = SLV
+			value = 200
+		}
+		diplomatic_influence = {
+			who = RUT
+			value = 200
+		}
+		diplomatic_influence = {
+			who = VOJ
+			value = 200
+		}
+		diplomatic_influence = {
+			who = CRO
+			value = 200
+		}
+		diplomatic_influence = {
+			who = SIE
+			value = 200
+		}
+		diplomatic_influence = {
+			who = HUN
+			value = 200
+		}
+		set_country_flag = hungary_released
+		country_event = { id=50023 days=5 }
+	}		
+}
+
+country_event = {
+	id = 50022
+	title = "EVTNAME50022"
+	desc = "EVTDESC50022"
+	picture = "Limburg"
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA50022"
+		381 = {
+			secede_province = HRE
+		}
+		prestige = 20
+		relation = {
+		   who = HRE
+		   value = 200
+		}
+	}
+
+	option = {
+		name = "EVTOPTB50022"
+		prestige = 10
+		relation = {
+		   who = HRE
+		   value = -200
+		}
+		war = {
+			target = HRE
+			attacker_goal = {
+				casus_belli = status_quo
+			}
+			defender_goal = {
+				casus_belli = acquire_state
+				state_province_id = 381
+			}
+			call_ally = yes
+		}
+	}
+}
+
+country_event = {
+	id = 50023
+	title = "EVTNAME50023"
+	desc = "EVTDESC50023"
+	picture = "HRE Exterior"
+
+	trigger = {
+		tag = HRE
+		war = no
+		has_country_flag = hungary_released
+		any_owned_province = {
+			is_core = no
+		}
+	}
+
+	option = {
+		name = "EVTOPTA50023"
+		prestige = 15
+		any_owned_province = {
+			limit = {
+				is_core = no
+			}
+			secede_province = HRC
+		}
+		create_vassal = HRC
+	}
 }
