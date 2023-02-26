@@ -686,7 +686,7 @@ country_event = {
 	id = 50012
 	title = "EVTNAME50012"
 	desc = "EVTDESC50012"
-	picture = "Saxony"
+	picture = "Defragmentation"
 
 	trigger = {
 		tag = HRE
@@ -766,7 +766,7 @@ country_event = {
 	id = 50013
 	title = "EVTNAME50013"
 	desc = "EVTDESC50013"
-	picture = "Hanover"
+	picture = "Defragmentation"
 
 	trigger = {
 		tag = HRE
@@ -884,7 +884,7 @@ country_event = {
 	id = 50014
 	title = "EVTNAME50014"
 	desc = "EVTDESC50014"
-	picture = "Mecklemburg"
+	picture = "Defragmentation"
 
 	trigger = {
 		tag = HRE
@@ -1018,7 +1018,7 @@ country_event = {
 	id = 50015
 	title = "EVTNAME50015"
 	desc = "EVTDESC50015"
-	picture = "Westfalia"
+	picture = "Defragmentation"
 
 	trigger = {
 		tag = HRE
@@ -1209,7 +1209,7 @@ country_event = {
 	id = 50016
 	title = "EVTNAME50016"
 	desc = "EVTDESC50016"
-	picture = "Poland"
+	picture = "Defragmentation"
 
 	trigger = {
 		tag = HRE
@@ -1325,7 +1325,7 @@ country_event = {
 	id = 50017
 	title = "EVTNAME50017"
 	desc = "EVTDESC50017"
-	picture = "Flanders"
+	picture = "Defragmentation"
 
 	trigger = {
 		tag = HRE
@@ -1430,7 +1430,7 @@ country_event = {
 	id = 50018
 	title = "EVTNAME50018"
 	desc = "EVTDESC50018"
-	picture = "Baviera"
+	picture = "Defragmentation"
 
 	trigger = {
 		tag = HRE
@@ -1522,7 +1522,7 @@ country_event = {
 	id = 50019
 	title = "EVTNAME50019"
 	desc = "EVTDESC50019"
-	picture = "Austria"
+	picture = "Defragmentation"
 
 	trigger = {
 		tag = HRE
@@ -1684,7 +1684,7 @@ country_event = {
 	id = 50020
 	title = "EVTNAME50020"
 	desc = "EVTDESC50020"
-	picture = "Piamonte"
+	picture = "Defragmentation"
 
 	trigger = {
 		tag = HRE
@@ -1858,7 +1858,7 @@ country_event = {
 	id = 50021
 	title = "EVTNAME50021"
 	desc = "EVTDESC50021"
-	picture = "Hungary"
+	picture = "Defragmentation"
 
 	trigger = {
 		tag = HRE
@@ -1994,9 +1994,11 @@ country_event = {
 	id = 50022
 	title = "EVTNAME50022"
 	desc = "EVTDESC50022"
-	picture = "Limburg"
+	picture = "Administration"
 
 	fire_only_once = yes
+
+	is_triggered_only = yes
 
 	option = {
 		name = "EVTOPTA50022"
@@ -2035,7 +2037,7 @@ country_event = {
 	id = 50023
 	title = "EVTNAME50023"
 	desc = "EVTDESC50023"
-	picture = "Denmark"
+	picture = "DuchyWar"
 
 	trigger = {
 		tag = DEN
@@ -2048,6 +2050,8 @@ country_event = {
 	}
 
 	fire_only_once = yes
+
+	is_triggered_only = yes
 
 	option = {
 		name = "EVTOPTA50023"
@@ -2075,7 +2079,11 @@ country_event = {
 	id = 50024
 	title = "EVTNAME50024"
 	desc = "EVTDESC50024"
-	picture = "Denmark"
+	picture = "DuchyWar"
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
 
 	option = {
 		name = "EVTOPTA50024"
@@ -2138,7 +2146,7 @@ country_event = {
 	id = 50025
 	title = "EVTNAME50025"
 	desc = "EVTDESC50025"
-	picture = "Denmark"
+	picture = "DuchyWar"
 
 	trigger = {
 		exists = NGF
@@ -2148,13 +2156,6 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA50025"
-		NGF = {
-			inherit = DEN
-		}
-	}
-	
-	option = {
-		name = "EVTOPTB50025"
 		war = {
 			target = NGF
 			attacker_goal = { casus_belli = humiliate }
