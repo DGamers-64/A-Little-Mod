@@ -1,0 +1,11 @@
+owner = NEH
+controller = NEH
+add_core = SWI
+add_core = PRU
+add_core = NEH
+trade_goods = coal
+life_rating = 40
+
+1857.1.1 = {
+	remove_core = PRU
+}

@@ -250,6 +250,20 @@ DEN = {
 
 }
 
+SGM = {
+
+	value = 200
+	level = 5
+	influence_value = 50
+}
+
+NEH = {
+
+	value = 200
+	level = 4
+	influence_value = 75
+}
+
 leader = {
 	name = "von Zieten"
 	date = 1813.1.1
