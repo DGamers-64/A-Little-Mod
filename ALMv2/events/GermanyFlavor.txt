@@ -659,30 +659,28 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = 50011
-	title = "EVTNAME50011"
-	desc = "EVTDESC50011"
-	picture = "Rebellion"
-
-	trigger = {
-		tag = HRE
-		capital_scope = {
-			controlled_by_rebels = yes
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 0
-	}
-
-	option = {
-		name = "EVTOPTA50011"
-		REB = {
-			inherit = THIS
-		}
-	}	
-}
+#country_event = {
+#	id = 50011
+#	title = "EVTNAME50011"
+#	desc = "EVTDESC50011"
+#	picture = "Rebellion"
+#
+#	trigger = {
+#		tag = HRE
+#		capital_scope = {
+#			controlled_by_rebels = yes
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 0
+#	}
+#
+#	option = {
+#		name = "EVTOPTA50011"
+#		#############################################################################################
+#	}	
+#}
 
 country_event = {
 	id = 50012
@@ -2030,5 +2028,139 @@ country_event = {
 			}
 			call_ally = yes
 		}
+	}
+}
+
+country_event = {
+	id = 50023
+	title = "EVTNAME50023"
+	desc = "EVTDESC50023"
+	picture = "Denmark"
+
+	trigger = {
+		tag = DEN
+		exists = PRU
+		has_recently_lost_war = yes
+		SCH = {
+			owns = 370
+		}
+		government = absolute_monarchy
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA50023"
+		prestige = 20
+		any_pop = {
+			limit = {
+				NOT = {
+					is_culture_group = germanic
+				}
+			}
+			militancy = -3
+			consciousness = -3
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB50023"
+		PRU = {
+			country_event = { id=50024 days=0 }
+		}
+	}
+}
+
+country_event = {
+	id = 50024
+	title = "EVTNAME50024"
+	desc = "EVTDESC50024"
+	picture = "Denmark"
+
+	option = {
+		name = "EVTOPTA50024"
+		prestige = 5
+		badboy = 1
+		any_country = {
+			limit = {
+				is_culture_group = scandinavian
+			}
+			relation = {
+			   who = THIS
+			   value = -200
+			}
+		}
+		any_pop = {
+			limit = {
+				is_culture_group = scandinavian
+			}
+			militancy = 3
+			consciousness = 3
+		}
+		create_vassal = DEN
+		DEN = {
+			inherit = SCH
+			inherit = HOL
+		}
+		diplomatic_influence = {
+			who = DEN
+			value = 200
+		}
+	}
+
+	option = {
+		name = "EVTOPTB50024"
+		prestige = 10
+		badboy = -1
+		any_country = {
+			limit = {
+				is_culture_group = scandinavian
+				NOT = {
+					tag = DEN
+				}
+				relation = {
+				   who = THIS
+				   value = 50
+				}
+			}
+		}
+		any_pop = {
+			limit = {
+				is_culture_group = scandinavian
+			}
+			militancy = -3
+			consciousness = -3
+		}
+	}
+}
+
+country_event = {
+	id = 50025
+	title = "EVTNAME50025"
+	desc = "EVTDESC50025"
+	picture = "Denmark"
+
+	trigger = {
+		exists = NGF
+		tag = DEN
+		overlord = NGF
+	}
+	
+	option = {
+		name = "EVTOPTA50025"
+		NGF = {
+			inherit = DEN
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB50025"
+		war = {
+			target = NGF
+			attacker_goal = { casus_belli = humiliate }
+			defender_goal = { casus_belli = conquest }
+			call_ally = no
+		}
+		prestige = 10
 	}
 }

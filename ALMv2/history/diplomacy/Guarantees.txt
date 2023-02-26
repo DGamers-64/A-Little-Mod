@@ -1,0 +1,6 @@
+guarantee = {
+    first = BAV
+    second = BAD
+    start_date = 1836.1.1 #1386.9.5
+    end_date = 1936.1.1
+}
