@@ -27,52 +27,6 @@ EVTNAME50010;Vienna Siege;;;;;;;;;;;;;x
 EVTDESC50010;Our brave soldiers have besieged Vienna, and here they have been able to capture the mighty Habsburg emperor! Now he has surrendered unconditionally and victory over Austria is ours.;;;;;;;;;;;;;x
 EVTOPTA50010;Great!;;;;;;;;;;;;;x
 EVTNAME50011;Rebels!!!;;;;;;;;;;;;;x
-EVTDESC50011;The rebels have taken our capital! We must defend our domain but several of our vassals have turned against us, we must defeat them before they make us disappear!;;;;;;;;;;;;;x
-EVTOPTA50011;Go ahead!;;;;;;;;;;;;;x
-EVTNAME50012;Descentralization - Saxony;;;;;;;;;;;;;x
-EVTDESC50012;How  must be Saxony?;;;;;;;;;;;;;x
-EVTOPTA50012;Saxony must be big!;;;;;;;;;;;;;x
-EVTOPTB50012;Saxony has to be divided;;;;;;;;;;;;;x
-EVTNAME50013;Descentralization - Hanover;;;;;;;;;;;;;x
-EVTDESC50013;How  must be Hanover?;;;;;;;;;;;;;x
-EVTOPTA50013;Hanover must be big!;;;;;;;;;;;;;x
-EVTOPTB50013;Hanover has to be divided;;;;;;;;;;;;;x
-EVTNAME50014;Descentralization - Mecklemburg;;;;;;;;;;;;;x
-EVTDESC50014;How  must be Mecklemburg?;;;;;;;;;;;;;x
-EVTOPTA50014;Mecklemburg must be big!;;;;;;;;;;;;;x
-EVTOPTB50014;Mecklemburg has to be divided;;;;;;;;;;;;;x
-EVTNAME50015;Descentralization - Westfalia;;;;;;;;;;;;;x
-EVTDESC50015;How  must be Westfalia?;;;;;;;;;;;;;x
-EVTOPTA50015;Westfalia must be big!;;;;;;;;;;;;;x
-EVTOPTB50015;Westfalia has to be divided;;;;;;;;;;;;;x
-EVTNAME50016;Descentralization - Poland;;;;;;;;;;;;;x
-EVTDESC50016;How  must be Poland?;;;;;;;;;;;;;x
-EVTOPTA50016;Poland must be big!;;;;;;;;;;;;;x
-EVTOPTB50016;Poland has to be divided;;;;;;;;;;;;;x
-EVTNAME50017;Descentralization - Flanders;;;;;;;;;;;;;x
-EVTDESC50017;How  must be Flanders?;;;;;;;;;;;;;x
-EVTOPTA50017;Flanders must be big!;;;;;;;;;;;;;x
-EVTOPTB50017;Flanders has to be divided;;;;;;;;;;;;;x
-EVTNAME50018;Descentralization - Baviera;;;;;;;;;;;;;x
-EVTDESC50018;How  must be Baviera?;;;;;;;;;;;;;x
-EVTOPTA50018;Baviera must be big!;;;;;;;;;;;;;x
-EVTOPTB50018;Baviera has to be divided;;;;;;;;;;;;;x
-EVTNAME50019;Descentralization - Austria;;;;;;;;;;;;;x
-EVTDESC50019;How  must be Austria?;;;;;;;;;;;;;x
-EVTOPTA50019;Austria must be big!;;;;;;;;;;;;;x
-EVTOPTB50019;Austria has to be divided;;;;;;;;;;;;;x
-EVTNAME50020;Descentralization - Piamonte;;;;;;;;;;;;;x
-EVTDESC50020;How  must be Piamonte?;;;;;;;;;;;;;x
-EVTOPTA50020;Piamonte must be big!;;;;;;;;;;;;;x
-EVTOPTB50020;Piamonte has to be divided;;;;;;;;;;;;;x
-EVTNAME50021;Descentralization - Hungary;;;;;;;;;;;;;x
-EVTDESC50021;How  must be Hungary?;;;;;;;;;;;;;x
-EVTOPTA50021;Hungary must be big!;;;;;;;;;;;;;x
-EVTOPTB50021;Hungary has to be divided;;;;;;;;;;;;;x
-EVTNAME50022;The Limburgian Question;;;;;;;;;;;;;x
-EVTDESC50022;The province of Limburg, in our hands, is wanted by the renewed Holy Roman Empire, but it is ours by right and they are sending us an ultimatum to cede the province. We can either not do it and go to war against them, or we can cede the province to them and get along with this renewed empire. What should we do?;;;;;;;;;;;;;x
-EVTOPTA50022;We should cede the province to them;;;;;;;;;;;;;x
-EVTOPTB50022;We will go to war then;;;;;;;;;;;;;x
 EVTNAME50023;A proposal for the prusians;;;;;;;;;;;;;x
 EVTDESC50023;Defeat in the Duchy War has left us weak and humiliated in the face of the Germans. The duchy of Schleswig-Holstein has been taken from us, yes, but we can still be united with these duchies if we join the German confederation. We will be giving up our independence, but the Germans are proving to be prosperous and are making great strides industrially. What shall we do, King?;;;;;;;;;;;;;x
 EVTOPTA50023;Our independence is more important than anything else;;;;;;;;;;;;;x
