@@ -38,11 +38,11 @@ EVTOPTB50024;We should not mix with other non-German ethnicities.;;;;;;;;;;;;;x
 EVTNAME50025;The end?;;;;;;;;;;;;;x
 EVTDESC50025;The North German Confederation has been proclamated. But we want to unify with the germans? Help, King;;;;;;;;;;;;;x
 EVTOPTA50025;I can not allow this exigences.;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
+EVTNAME50026;A new policy law;;;;;;;;;;;;;x
+EVTDESC50026;We need to set a new policy law for upgrade our country!;;;;;;;;;;;;;x
+EVTOPTA50026;Our country needs diplomatic laws;;;;;;;;;;;;;x
+EVTOPTB50026;Our country needs economic laws;;;;;;;;;;;;;x
+EVTOPTC50026;Our country needs military laws;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x

@@ -1,0 +1,19 @@
+political_decisions = {
+    sets_laws = {
+        potential = {
+            NOT = {
+                has_country_flag = laws_flag
+            }
+            civilized = yes
+        }
+    
+        allow = {
+            civilized = yes
+        }
+    
+        effect = {
+            country_event = { id=50026 days=0 }
+            set_country_flag = laws_flag
+        }
+    }
+}

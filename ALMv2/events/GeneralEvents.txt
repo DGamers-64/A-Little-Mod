@@ -1,0 +1,32 @@
+country_event = {
+	id = 50026
+	title = "EVTNAME50026"
+	desc = "EVTDESC50026"
+	picture = "meeting"
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA50026"
+		add_country_modifier = {
+			name = diplo_laws
+			duration = 36500
+		}
+	}
+
+	option = {
+		name = "EVTOPTB50026"
+		add_country_modifier = {
+			name = economic_laws
+			duration = 36500
+		}
+	}
+
+	option = {
+		name = "EVTOPTC50026"
+		add_country_modifier = {
+			name = military_laws
+			duration = 36500
+		}
+	}
+}
