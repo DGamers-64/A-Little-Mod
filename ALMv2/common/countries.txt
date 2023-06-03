@@ -274,7 +274,7 @@ DLM        = "countries/Dalmatia.txt"
 NEH        = "countries/Neuchatel Canton.txt"
 SGM        = "countries/Sigmaringen-Hohe.txt"
 LBG        = "countries/Limburg.txt"
-CAR        = "countries/Argentine Confederation"
+CAR        = "countries/Argentine Confederation.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes # any tags after this is considered dynamic dominions

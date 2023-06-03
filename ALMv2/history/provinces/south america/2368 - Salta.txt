@@ -1,6 +1,7 @@
-owner = ARG
-controller = ARG
+owner = CAR
+controller = CAR
 add_core = BOL
 add_core = ARG
 trade_goods = wool
 life_rating = 35
+add_core = CAR

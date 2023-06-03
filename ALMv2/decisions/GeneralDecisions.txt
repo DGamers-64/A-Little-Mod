@@ -12,7 +12,7 @@ political_decisions = {
         }
     
         effect = {
-            country_event = { id=50026 days=0 }
+            country_event = { id=50014 days=0 }
             set_country_flag = laws_flag
         }
     }

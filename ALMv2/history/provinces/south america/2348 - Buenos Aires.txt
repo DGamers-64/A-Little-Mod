@@ -1,4 +1,5 @@
-owner = ARG
-controller = ARGadd_core = ARG
+owner = CAR
+controller = CARadd_core = ARG
 trade_goods = cattle
 life_rating = 351861.1.1 = { railroad = 1 }
+add_core = CAR

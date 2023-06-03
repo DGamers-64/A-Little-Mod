@@ -26,23 +26,22 @@ EVTOPTB50006;A big country is a big problem!;;;;;;;;;;;;;x
 EVTNAME50010;Vienna Siege;;;;;;;;;;;;;x
 EVTDESC50010;Our brave soldiers have besieged Vienna, and here they have been able to capture the mighty Habsburg emperor! Now he has surrendered unconditionally and victory over Austria is ours.;;;;;;;;;;;;;x
 EVTOPTA50010;Great!;;;;;;;;;;;;;x
-EVTNAME50011;Rebels!!!;;;;;;;;;;;;;x
-EVTNAME50023;A proposal for the prusians;;;;;;;;;;;;;x
-EVTDESC50023;Defeat in the Duchy War has left us weak and humiliated in the face of the Germans. The duchy of Schleswig-Holstein has been taken from us, yes, but we can still be united with these duchies if we join the German confederation. We will be giving up our independence, but the Germans are proving to be prosperous and are making great strides industrially. What shall we do, King?;;;;;;;;;;;;;x
-EVTOPTA50023;Our independence is more important than anything else;;;;;;;;;;;;;x
-EVTOPTB50023;Perhaps we should propose it to the Prussians, yes.;;;;;;;;;;;;;x
-EVTNAME50024;A proposal from Christian IX;;;;;;;;;;;;;x
-EVTDESC50024;King Christian XI of Denmark has offered to join the Germanic confederation in exchange for the continued retention of Schleswig and Holstein. We can accept them and in the future annex them as part of Germany, but the Danes could tarnish our ethnic unity. You decide what to do with this country.;;;;;;;;;;;;;x
-EVTOPTA50024;Denmark is welcome!;;;;;;;;;;;;;x
-EVTOPTB50024;We should not mix with other non-German ethnicities.;;;;;;;;;;;;;x
-EVTNAME50025;The end?;;;;;;;;;;;;;x
-EVTDESC50025;The North German Confederation has been proclamated. But we want to unify with the germans? Help, King;;;;;;;;;;;;;x
-EVTOPTA50025;I can not allow this exigences.;;;;;;;;;;;;;x
-EVTNAME50026;A new policy law;;;;;;;;;;;;;x
-EVTDESC50026;We need to set a new policy law for upgrade our country!;;;;;;;;;;;;;x
-EVTOPTA50026;Our country needs diplomatic laws;;;;;;;;;;;;;x
-EVTOPTB50026;Our country needs economic laws;;;;;;;;;;;;;x
-EVTOPTC50026;Our country needs military laws;;;;;;;;;;;;;x
+EVTNAME50011;A proposal for the prusians;;;;;;;;;;;;;x
+EVTDESC50011;Defeat in the Duchy War has left us weak and humiliated in the face of the Germans. The duchy of Schleswig-Holstein has been taken from us, yes, but we can still be united with these duchies if we join the German confederation. We will be giving up our independence, but the Germans are proving to be prosperous and are making great strides industrially. What shall we do, King?;;;;;;;;;;;;;x
+EVTOPTA50011;Our independence is more important than anything else;;;;;;;;;;;;;x
+EVTOPTB50011;Perhaps we should propose it to the Prussians, yes.;;;;;;;;;;;;;x
+EVTNAME50012;A proposal from Christian IX;;;;;;;;;;;;;x
+EVTDESC50012;King Christian XI of Denmark has offered to join the Germanic confederation in exchange for the continued retention of Schleswig and Holstein. We can accept them and in the future annex them as part of Germany, but the Danes could tarnish our ethnic unity. You decide what to do with this country.;;;;;;;;;;;;;x
+EVTOPTA50012;Denmark is welcome!;;;;;;;;;;;;;x
+EVTOPTB50012;We should not mix with other non-German ethnicities.;;;;;;;;;;;;;x
+EVTNAME50013;The end?;;;;;;;;;;;;;x
+EVTDESC50013;The North German Confederation has been proclamated. But we want to unify with the germans? Help, King;;;;;;;;;;;;;x
+EVTOPTA50013;I can not allow this exigences.;;;;;;;;;;;;;x
+EVTNAME50014;A new policy law;;;;;;;;;;;;;x
+EVTDESC50014;We need to set a new policy law for upgrade our country!;;;;;;;;;;;;;x
+EVTOPTA50014;Our country needs diplomatic laws;;;;;;;;;;;;;x
+EVTOPTB50014;Our country needs economic laws;;;;;;;;;;;;;x
+EVTOPTC50014;Our country needs military laws;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x

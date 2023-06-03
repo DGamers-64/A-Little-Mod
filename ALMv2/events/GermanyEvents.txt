@@ -1,136 +1,5 @@
 #   GERMANY FLAVOR EVENTS
 
-# Puppet new!
-
-country_event = {
-	id = 50001
-	title = "EVTNAME50001"
-	desc = "EVTDESC50001"
-	picture = "Demonstration"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "EVTOPTA50001"
-		prestige = 3
-	}
-}
-
-# Get them Annexed
-country_event = {
-	id = 60130
-	title = "EVTNAME60130"
-	desc = "EVTDESC60130"
-	picture = "greatpowers"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "EVTOPTA60130"
-		prestige = 5
-		inherit = FROM
-	}
-
-	option = {
-		name = "EVTOPTB60130"
-		any_pop = {
-			militancy = 0.1
-		}
-	}
-}
-
-# Annex SoIs
-country_event = {
-	id = 60120
-	title = "EVTNAME60120"
-	desc = "EVTDESC60120"
-	picture = "greatpowers"
-
-	trigger = {
-		ai = yes
-		war = no
-		overlord = {
-			OR = {
-				tag = PRU
-				tag = NGF
-				tag = GER
-			}
-		}
-		part_of_sphere = yes
-		sphere_owner = {
-			war = no
-			OR = {
-				tag = PRU
-				tag = NGF
-				tag = GER
-			}
-		}
-		NOT = {
-			AND = {
-				OR = {
-					tag = AUS
-					tag = KUK
-				}
-				sphere_owner = {
-					tag = GER
-				}
-				NOT = {
-					exists = HUN
-				}
-			}
-		}
-		NOT = {
-			tag = ISR
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 8
-
-	}
-
-	option = {
-		name = "EVTOPTA60120"
-		sphere_owner = {
-			country_event = { id=60130 days=0 }
-		}
-	}
-}
-
-# NGF
-
-country_event = {
-	id = 50002
-	title = "EVTNAME50002"
-	desc = "EVTDESC50002"
-	picture = "Demonstration"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "EVTOPTA50002"
-		prestige = 3
-		NGF = {
-			create_vassal = THIS
-		}
-	}
-
-	option = {
-		name = "EVTOPTB50002"
-		prestige = -10
-		relation = {
-			who = NGF
-			value = -200
-		}
-		war = {
-			target = NGF
-			attacker_goal = { casus_belli = humiliate }
-			defender_goal = { casus_belli = conquest }
-			call_ally = no
-		}
-	}
-}
-
 #  Puppets
 
 country_event = {
@@ -230,6 +99,56 @@ country_event = {
 		}
 
 		set_country_flag = GermanyPuppet
+	}
+}
+
+# Puppet new!
+
+country_event = {
+	id = 50001
+	title = "EVTNAME50001"
+	desc = "EVTDESC50001"
+	picture = "Demonstration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA50001"
+		prestige = 3
+	}
+}
+
+# NGF
+
+country_event = {
+	id = 50002
+	title = "EVTNAME50002"
+	desc = "EVTDESC50002"
+	picture = "Demonstration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA50002"
+		prestige = 3
+		NGF = {
+			create_vassal = THIS
+		}
+	}
+
+	option = {
+		name = "EVTOPTB50002"
+		prestige = -10
+		relation = {
+			who = NGF
+			value = -200
+		}
+		war = {
+			target = NGF
+			attacker_goal = { casus_belli = humiliate }
+			defender_goal = { casus_belli = conquest }
+			call_ally = no
+		}
 	}
 }
 
@@ -489,6 +408,45 @@ country_event = {
 	}
 }
 
+#	A-2
+
+country_event = {
+	id = 50007
+	title = "EVTNAME50006"
+	desc = "EVTDESC50006"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA50006"
+
+		relation = {
+			who = HUN
+			value = 200
+		}
+
+		diplomatic_influence = {
+			who = HUN
+			value = 200
+		}
+	}
+
+	option = {
+		name = "EVTOPTB50006"
+
+		prestige = 5
+
+		HUN = {
+			release = CRO
+		}
+
+		HUN = {
+			release = SLV
+		}
+	}
+}
+
 #	B-1
 
 country_event = {
@@ -529,45 +487,6 @@ country_event = {
 		create_vassal = TRE
 		create_vassal = SLV
 
-	}
-}
-
-#	A-2
-
-country_event = {
-	id = 50007
-	title = "EVTNAME50006"
-	desc = "EVTDESC50006"
-	picture = "greatpowers"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "EVTOPTA50006"
-
-		relation = {
-			who = HUN
-			value = 200
-		}
-
-		diplomatic_influence = {
-			who = HUN
-			value = 200
-		}
-	}
-
-	option = {
-		name = "EVTOPTB50006"
-
-		prestige = 5
-
-		HUN = {
-			release = CRO
-		}
-
-		HUN = {
-			release = SLV
-		}
 	}
 }
 
@@ -660,9 +579,9 @@ country_event = {
 }
 
 country_event = {
-	id = 50023
-	title = "EVTNAME50023"
-	desc = "EVTDESC50023"
+	id = 50011
+	title = "EVTNAME50011"
+	desc = "EVTDESC50011"
 	picture = "DuchyWar"
 
 	trigger = {
@@ -680,7 +599,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "EVTOPTA50023"
+		name = "EVTOPTA50011"
 		prestige = 20
 		any_pop = {
 			limit = {
@@ -694,17 +613,17 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTB50023"
+		name = "EVTOPTB50011"
 		PRU = {
-			country_event = { id=50024 days=0 }
+			country_event = { id=50012 days=0 }
 		}
 	}
 }
 
 country_event = {
-	id = 50024
-	title = "EVTNAME50024"
-	desc = "EVTDESC50024"
+	id = 50012
+	title = "EVTNAME50012"
+	desc = "EVTDESC50012"
 	picture = "DuchyWar"
 
 	fire_only_once = yes
@@ -712,7 +631,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "EVTOPTA50024"
+		name = "EVTOPTA50012"
 		prestige = 5
 		badboy = 1
 		any_country = {
@@ -743,7 +662,7 @@ country_event = {
 	}
 
 	option = {
-		name = "EVTOPTB50024"
+		name = "EVTOPTB50012"
 		prestige = 10
 		badboy = -1
 		any_country = {
@@ -769,9 +688,9 @@ country_event = {
 }
 
 country_event = {
-	id = 50025
-	title = "EVTNAME50025"
-	desc = "EVTDESC50025"
+	id = 50013
+	title = "EVTNAME50013"
+	desc = "EVTDESC50013"
 	picture = "DuchyWar"
 
 	trigger = {
@@ -781,7 +700,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA50025"
+		name = "EVTOPTA50013"
 		war = {
 			target = NGF
 			attacker_goal = { casus_belli = humiliate }
@@ -789,5 +708,86 @@ country_event = {
 			call_ally = no
 		}
 		prestige = 10
+	}
+}
+
+# Annex SoIs
+country_event = {
+	id = 60120
+	title = "EVTNAME60120"
+	desc = "EVTDESC60120"
+	picture = "greatpowers"
+
+	trigger = {
+		ai = yes
+		war = no
+		overlord = {
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+			}
+		}
+		part_of_sphere = yes
+		sphere_owner = {
+			war = no
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					tag = AUS
+					tag = KUK
+				}
+				sphere_owner = {
+					tag = GER
+				}
+				NOT = {
+					exists = HUN
+				}
+			}
+		}
+		NOT = {
+			tag = ISR
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+	}
+
+	option = {
+		name = "EVTOPTA60120"
+		sphere_owner = {
+			country_event = { id=60130 days=0 }
+		}
+	}
+}
+
+# Get them Annexed
+country_event = {
+	id = 60130
+	title = "EVTNAME60130"
+	desc = "EVTDESC60130"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA60130"
+		prestige = 5
+		inherit = FROM
+	}
+
+	option = {
+		name = "EVTOPTB60130"
+		any_pop = {
+			militancy = 0.1
+		}
 	}
 }
