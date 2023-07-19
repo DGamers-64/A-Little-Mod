@@ -42,9 +42,9 @@ EVTDESC50014;We need to set a new policy law for upgrade our country!;;;;;;;;;;;
 EVTOPTA50014;Our country needs diplomatic laws;;;;;;;;;;;;;x
 EVTOPTB50014;Our country needs economic laws;;;;;;;;;;;;;x
 EVTOPTC50014;Our country needs military laws;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
-;;;;;;;;;;;;;;x
+EVTNAME50015;Desert Conquest;;;;;;;;;;;;;x
+EVTDESC50015;si;;;;;;;;;;;;;x
+EVTOPTA50015;Annex $PROVINCENAME$ now!;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;;x
