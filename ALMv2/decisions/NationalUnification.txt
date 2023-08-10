@@ -6,6 +6,7 @@ political_decisions = {
 			NOT = {
 				exists = GER
 				exists = NGF
+				exists = GCF
 			}
 		}	
 		allow = {
@@ -324,6 +325,7 @@ political_decisions = {
 			is_culture_group = germanic
 			NOT = {
 				exists = GER
+				exists = GCF
 				tag = ISR
 			}
 		}
