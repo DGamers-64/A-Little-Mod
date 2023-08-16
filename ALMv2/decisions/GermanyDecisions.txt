@@ -1,4 +1,31 @@
 political_decisions = {
+    luxembourg_purchase = {
+        potential = {
+            OR = {
+                tag = FRA
+                tag = PRU
+            }
+            LUX = {
+                vassal_of = NET
+            }
+        }
+    
+        allow = {
+            money = 200000
+            NET = {
+                is_greater_power = no
+            }
+        }
+    
+        effect = {
+            treasury = -200000
+            inherit = LUX
+            NET = {
+                treasury = 200000
+            }
+        }
+    }
+
     germany_cores_in_austria = {
         picture = germany_cores_in_austria
         potential = {
